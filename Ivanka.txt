@@ -1,0 +1,5 @@
+
+LZIvankaH    3daf45wf2q5 
+
+Add-VpnConnectionRoute -ConnectionName "1c_Sklad" -DestinationPrefix 192.168.6.0/24 –PassThru
+Add-VpnConnectionRoute -ConnectionName "1c_Office" -DestinationPrefix 192.168.60.0/24 –PassThru
