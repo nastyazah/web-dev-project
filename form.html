@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nastyazah">
+    <meta name="viewport" content="widht=device-wight, initial-scale=1.0">
+    <title>Форма для реєстрації користувача</title>
+</head>
+<body>
+    <h1>Реєстрація користувача</h1>
+
+    <form action="#" method="post">
+        <fieldset>
+            <p><em><lagent>Головна інформація</lagent></em></p>
+            <label for="username">Введіть ваше ім'я</label>
+            <input type="text" name="username" id="username" name="username" required>
+            <br><br>
+
+            <label for="email">Електронна пошта</label>
+            <input type="email"  name="email" id="email" name="email" required >
+            <br><br>
+
+            <label for="login">Логін</label>
+            <input type="text" name="login" id="login" required>
+            <br><br>
+
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password"  name="password"required>
+            <br><br>
+
+        </fieldset>
+
+        <fieldset>
+           <p><em><lagent>Адреса проживання</lagent></em></p>
+
+            <label for="country">Країна:</label>
+            <input type="text" id="country" name="country" required>
+            <br><br>
+            
+            <label for="city">Місто:</label>
+            <input type="text" id="city" name="city" required>
+            <br><br>
+            
+            <label for="street">Вулиця:</label>
+            <input type="text" id="street" name="street" required>
+            <br><br>
+            
+            <label for="house">Будинок:</label>
+            <input type="text" id="house" name="house" required>
+            <br><br>
+            
+            <label for="apartment">Квартира (необов'язково):</label>
+            <input type="text" id="apartment" name="apartment">
+            <br><br>
+        </fieldset>
+        <br>
+
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree"> Я погоджуюсь з умовами використання</label>
+        <br><br>
+
+        <button type="submit">Зареєструватися</button>
+        <button type="rese">Очистити форму</button>
+        </form>
+
+        <hr>
+
+        <p>Вже маєте обліковий запис?<a href=""> Увійти</a></p>
+</body>
+</html>
