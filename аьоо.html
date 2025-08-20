@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Терміни веб-розробки</title>
+    </head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        
+        .subtitle {
+            color: #3498db;
+            text-align: center;
+            font-style: italic;
+        }
+        
+        .term-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .term-name {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .short-def {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .full-def {
+            color: #555;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 768px) {
+            .terms-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <header>
+        <h1>Терміни веб-розробки</h1>
+        <p class="subtitle">Наведіть курсор на термін для підказки, клікніть для деталей</p>
+    </header>
+    
+    <div class="terms-container">
+        <div class="term-card">
+            <div class="term-name" title="HyperText Markup Language">HTML</div>
+            <p class="short-def">Мова розмітки для створення веб-сторінок.</p>
+            <div class="full-def">
+                <p>HTML (HyperText Markup Language) - це стандартна мова розмітки для створення веб-сторінок. Вона визначає структуру контенту за допомогою системи тегів та атрибутів.</p>
+                <p>Основні сучасні стандарти: HTML5, XHTML. Використовується разом з CSS та JavaScript для створення повноцінних веб-додатків.</p>
+                <a href="https://developer.mozilla.org/uk/docs/Web/HTML" class="learn-more">Дізнатися більше</a>
+            </div>
+        </div>
+        
+        <div class="term-card">
+            <div class="term-name" title="Document Object Model">DOM</div>
+            <p class="short-def">Програмне представлення структури сторінки.</p>
+            <div class="full-def">
+                <p>DOM (Document Object Model) - це програмний інтерфейс для веб-документів. Він представляє сторінку таким чином, що програми можуть змінювати структуру, стиль і вміст документа.</p>
+                <p>DOM представляє документ у вигляді дерева вузлів, де кожен вузол представляє частину документа (елемент, текст тощо).</p>
+                <a href="https://developer.mozilla.org/uk/docs/Web/API/Document_Object_Model" class="learn-more">Дізнатися більше</a>
+            </div>
+        </div>
+        
+        <div class="term-card">
+            <div class="term-name" title="Cascading Style Sheets">CSS</div>
+            <p class="short-def">Мова стилів для оформлення веб-сторінок.</p>
+            <div class="full-def">
+                <p>CSS (Cascading Style Sheets) - це мова таблиць стилів, яка використовується для опису зовнішнього вигляду документа, написаного HTML.</p>
+                <p>Сучасні стандарти включають CSS3 з такими можливостями як анімації, переходи, медіа-запити для адаптивного дизайну, змінні (CSS Custom Properties) тощо.</p>
+                <a href="https://developer.mozilla.org/uk/docs/Web/CSS" class="learn-more">Дізнатися більше</a>
+            </div>
+        </div>
+        
+        <div class="term-card">
+            <div class="term-name" title="User Experience">UX</div>
+            <p class="short-def">Досвід користувача при взаємодії із системою.</p>
+            <div class="full-def">
+                <p>UX (User Experience) охоплює всі аспекти взаємодії кінцевого користувача з компанією, її сервісами та продуктами.</p>
+                <p>Основними принципами хорошого UX є: зручність використання, доступність, ефективність, емоційна взаємодія та задоволення від використання продукту.</p>
+                <a href="https://www.nngroup.com/articles/definition-user-experience/" class="learn-more">Дізнатися більше</a>
+            </div>
+        </div>
+        
+        <div class="term-card">
+            <div class="term-name" title="Application Programming Interface">API</div>
+            <p class="short-def">Інтерфейс для взаємодії програм між собою.</p>
+            <div class="full-def">
+                <p>API (Application Programming Interface) - це набір визначень та протоколів для створення програмного забезпечення.</p>
+                <p>У веб-розробці, API часто є набором HTTP-запитів для отримання або відправлення даних (REST, GraphQL, SOAP). Вони дозволяють різним системам спілкуватися між собою.</p>
+                <a href="https://developer.mozilla.org/uk/docs/Glossary/API" class="learn-more">Дізнатися більше</a>
+            </div>
+        </div>
+        
+        <div class="term-card">
+            <div class="term-name" title="Representational State Transfer">REST</div>
+            <p class="short-def">Стиль архітектури для веб-сервісів.</p>
+            <div class="full-def">
+                <p>REST (Representational State Transfer) - це архітектурний стиль для розподілених систем, зокрема для веб-сервісів.</p>
+                <p>Основні принципи REST: клієнт-серверна архітектура, відсутність стану (stateless), кешування, уніфікований інтерфейс, шарова система. Часто використовується з протоколом HTTP.</p>
+                <a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm" class="learn-more">Дізнатися більше</a>
+            </div>
+        </div>
+        
+        <div class="term-card">
+            <div class="term-name" title="JavaScript">JS</div>
+            <p class="short-def">Мова програмування для веб-додатків.</p>
+            <div class="full-def">
+                <p>JavaScript - це високорівнева, інтерпретована мова програмування, яка є однією з основних технологій Всесвітнього павутиння.</p>
+                <p>Сучасний JavaScript (ES6+) включає такі можливості як класи, проміси, async/await, модулі. Використовується як на клієнтській (браузер), так і на серверній (Node.js) стороні.</p>
+                <a href="https://developer.mozilla.org/uk/docs/Web/JavaScript" class="learn-more">Дізнатися більше</a>
+            </div>
+        </div>
+        
+        <div class="term-card">
+            <div class="term-name" title="Content Management System">CMS</div>
+            <p class="short-def">Система керування контентом.</p>
+            <div class="full-def">
+                <p>CMS (Content Management System) - це програмне забезпечення для створення, редагування та керування цифровим контентом.</p>
+                <p>Популярні CMS: WordPress (блоги, сайти), Drupal (складні сайти), Joomla, Shopify (електронна комерція). CMS дозволяють керувати контентом без глибоких технічних знань.</p>
+                <a href="https://kinsta.com/knowledgebase/content-management-system/" class="learn-more">Дізнатися більше</a>
+            </div>
+        </div>
+        
+        <div class="term-card">
+            <div class="term-name" title="Flexible Box Layout Module">Flexbox</div>
+            <p class="short-def">Модель для гнучкої верстки.</p>
+            <div class="full-def">
+                <p>Flexbox (Flexible Box Layout Module) - це CSS3-модуль для розміщення, вирівнювання та розподілу простору між елементами у контейнері, навіть коли їх розмір невідомий або динамічний.</p>
+                <p>Ключові концепції: flex-контейнер, flex-елементи, основна та поперечна осі, вирівнювання, порядок відображення елементів.</p>
+                <a href="https://developer.mozilla.org/uk/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" class="learn-more">Дізнатися більше</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 Словник термінів веб-розробки. Використовуйте наведення миші для підказок та клік для детальної інформації.</p>
+    </footer>
+</body>
+</html>
+
