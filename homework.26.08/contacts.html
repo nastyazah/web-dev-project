@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katy_Soho - Контакти</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+        }
+        header {
+            background-color: #00796b; 
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #004d40; 
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #004d40; 
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #00796b; 
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004d40; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Контактна інформація Katy_Soho</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="catalog.html">Каталог товарів</a></li>
+            <li><a href="product.html">Товар</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Наші контакти</h2>
+            <p>Тут ви можете вказати свою контактну інформацію, таку як адреса, телефон, email тощо.</p>
+            <ul>
+                <li>Адреса: м. Луцьк, вул. Лесі Українки 11</li>
+                <li>Телефон: +380 (97) 407 92 83</li>
+                <li>Email: site.katysoho@gmail.com</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Форма зворотного зв'язку</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Ваше повідомлення:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Відправити</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Katy_Soho. Всі права захищені.</p>
+    </footer>
+</body>
+</html>

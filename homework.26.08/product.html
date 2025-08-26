@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katy_Soho - Товар</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; 
+        }
+        header {
+            background-color: #00796b; 
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #004d40; 
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product-details {
+            display: flex;
+            align-items: center;
+        }
+        .product-image {
+            margin-right: 20px;
+        }
+        .product-image img {
+            max-width: 300px; 
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #004d40; 
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004d40; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Деталі товару Katy_Soho</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="catalog.html">Каталог товарів</a></li>
+            <li><a href="product.html">Товар</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <div class="product-details">
+                <div class="product-image">
+                    <img src="data:image/jpeg;base64,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" 
+                    alt="Сумка через плече шкіряна чорна KatySOHO "> 
+                </div>
+                <div class="product-info">
+                    <h2>Сумка через плече шкіряна чорна KatySOHO </h2>
+                    <p>Сумка крос-боді з натуральної шкіри власного виробництва на підкладці, застібка змійка.
+                          Всередині сумки одне відділення, потаємна кишенька на змійці та додаткова кишеня.
+                          Внизу є ніжки для стійкості.  Додатковий ремінець регулюється.</p>
+                    <p>Ціна: 3000 грн</p>
+                    <button>Купити</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Katy_Soho. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
